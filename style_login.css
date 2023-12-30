@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+body{
+    background: url(BG2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.box{
+    background-color: lightgreen;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.11);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 48vh;
+    margin-top: 22vh;
+    border-radius: 20px;
+    border: 1px solid #e3b2f7;
+}
+h2{
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+
+    font-size: 32px;
+}
+label{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.fields{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 45px;
+}
+input{
+    border: none;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+input:hover{
+    border: 1px solid black;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+button{
+    position: absolute;
+    left: 33%;
+    border-radius: 25px;
+    width: 100px;
+    height: 30px;
+}
+

@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: black;
+    /* font-family: madefor-display,helveticaneuew01-45ligh,helveticaneuew02-45ligh,helveticaneuew10-45ligh,sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+body{
+    background: url(BG1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88.5vh;
+    /* z-index: -1; */
+}
+header{
+    display: flex;
+    /* border: 2px solid black; */
+    /* border-radius: 35px; */
+    /* background-color: lightblue; */
+    padding: 10px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 5px;
+}
+nav{
+    height: 5vh;
+}
+ul{
+    display: flex;
+    gap: 50px;
+    padding-top: 6px;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    border: none;
+    border-radius: 25px;
+    height: 25px;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #166aea;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+div{
+    display: flex;
+    padding-right: 50px;
+    gap: 20px;
+}
+link{
+    transition: all ease-in-out 0.2s;
+}
+.link:hover{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-thickness: 3px;
+}
+h1{
+    font-weight: normal;
+    /* position: absolute;
+    left: 15%;
+    top: 15%; */
+    font-size: 32px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.title{
+    display: flex;
+}
+.ourproject{
+    /* border: 2px solid #166aea; */
+    display: inline-block;
+    margin-top: 50px;
+}
+.ourproject h1{
+    font-family:'Agbalumo';
+    background: linear-gradient(-70deg, yellow 0%, lightgreen 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ourproject a:hover{
+    color: yellow;
+}
+.ourproject h4{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+.mem{
+    font-family:'Agbalumo';
+    font-size: 32px;
+    background: linear-gradient(-70deg, yellow 0%, lightgreen 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* padding-left: 40px; */
+}
+.mainheading{
+    position: absolute;
+    left: 35%;
+    /* border: 2px solid #166aea; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    /* text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color:#BD7D8A;
+    text-decoration-thickness: 2px; */
+}
+.mainheading h1{
+    font-family:'Agbalumo';
+}
+img{
+    position: absolute;
+    width: 650px;
+    left: 50%;
+}
+.members{
+    display: flex;
+    margin-top: 13%;
+}
+.vivek{
+    position: relative;
+    display: inline-block;
+}
+.vivek .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background:linear-gradient(70deg, #442E80,#B6778A);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 40%;
+    margin-left: -60px;
+}
+.vivek:hover .tooltiptext{
+    visibility: visible;
+}
+.vivek .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #83567D transparent transparent transparent;
+}
+
+.Ashmit{
+    position: relative;
+    display: inline-block;
+}
+.Ashmit .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background:linear-gradient(-70deg, skyblue, violet);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    /* bottom: 100%; */
+    left: 40%;
+    margin-left: -60px;
+    top: 90%;
+}
+.Ashmit:hover .tooltiptext{
+    visibility: visible;
+}
+.Ashmit .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent violet transparent;
+}
+
+.Aman{
+    position: relative;
+    display: inline-block;
+}
+.Aman .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    height: 100px;
+    /* background:linear-gradient(-50deg, #7F557D,#4A326E); */
+    background:linear-gradient(-70deg, skyblue, violet);
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 40%;
+    margin-left: -60px;
+    /* top: 100%; */
+}
+.Aman:hover .tooltiptext{
+    visibility: visible;
+}
+.Aman .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: violet transparent transparent transparent;
+}
+
+
+.Harshit{
+    position: relative;
+    display: inline-block;
+}
+.Harshit .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background:linear-gradient(-50deg, #7F557D,#4A326E);
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 40%;
+    margin-left: -60px;
+}
+.Harshit:hover .tooltiptext{
+    visibility: visible;
+}
+.Harshit .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #4A326E transparent;
+}
+.tooltiptext{
+    text-align: justify;
+}

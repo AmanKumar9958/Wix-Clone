@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query</title>
+</head>
+<style>
+    form{
+        display: inline-block;
+        position: absolute;
+        left: 38%;
+        top: 15%;
+    }
+    body{
+        background: url(BG3.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 98.5vh;
+        background-repeat: no-repeat;
+        /* z-index: -1; */
+    }
+    legend{
+        font-family: Segoe UI;
+        font-weight: bold;
+        color: yellow;
+    }
+    select{
+        border-radius: 25px;
+        border: none;
+        /* font-size: px; */
+    }
+    button{
+        position: relative;
+        left: 35%;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: segoe UI;
+    }
+    button:hover{
+        background-color: greenyellow;
+        
+    }
+    label{
+        color: white;
+    }
+    textarea{
+        background-color: transparent;
+        border-color: green;
+    }
+</style>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Query Page</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" placeholder="Enter Your First Name..." required>
+            <br> <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" placeholder="Enter Your Last Name..." required>
+            <br> <br>
+            <label for="country">Choose Your Country:</label>
+            <select name="country" id="country">
+                <option value="Australia">Australia</option>
+                <option value="America">America</option>
+                <option value="Canada">Canada</option>
+                <option value="Germany">Germany</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia</option>
+                <option value="Japan">Japan</option>
+                <option value="Nepal">Nepal</option>
+                <option value="Qatar">Qatar</option>
+                <option value="India">India</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Oman">Oman</option>
+                <option value="Finland">Finland</option>
+            </select> <br> <br>
+            <label for="query">Enter your query:</label><br><br>
+            <textarea name="query" id="query" cols="30" rows="10" placeholder="Enter your query"></textarea><br> <br>
+            <a href="main.html"><button type="submit" onclick="btn()">Submit</button></a>
+        </fieldset>
+    </form>
+    <script>
+        function btn(){
+            alert("Your Query has been submitted");
+        }
+    </script>
+</body>
+</html>
